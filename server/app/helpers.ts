@@ -10,6 +10,7 @@ export enum LeagueRegion {
   BRAZIL = 'br1',
   EUROPE_NORTHEAST = 'eun1',
   EUROPE_WEST = 'euw1',
+  MIDDLE_EAST = 'me1',
   KOREA = 'kr',
   LATIN_AMERICA_NORTH = 'la1',
   LATIN_AMERICA_SOUTH = 'la2',
@@ -42,7 +43,7 @@ export enum RiotRegion {
  */
 export function getRiotRegion(region: string): RiotRegion {
   switch (
-    region as LeagueRegion // TODO: remove cast when region is typed to "Region" everywhere instead of string
+  region as LeagueRegion // TODO: remove cast when region is typed to "Region" everywhere instead of string
   ) {
     case LeagueRegion.NORTH_AMERICA:
     case LeagueRegion.BRAZIL:
@@ -61,6 +62,7 @@ export function getRiotRegion(region: string): RiotRegion {
       return RiotRegion.ASIA
     case LeagueRegion.EUROPE_NORTHEAST:
     case LeagueRegion.EUROPE_WEST:
+    case LeagueRegion.MIDDLE_EAST:
     case LeagueRegion.TURKEY:
     case LeagueRegion.RUSSIA:
       return RiotRegion.EUROPE
@@ -109,6 +111,8 @@ export const seasons = {
   1668434400000: 12.5, // Preseason 13
   1673384400000: 13,
   1704844799000: 14,
+  1736424000000: 25.1,
+  1746007200000: 25.2,
 }
 
 /**

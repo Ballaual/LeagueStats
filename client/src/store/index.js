@@ -27,6 +27,7 @@ export default new Vuex.Store({
       kr: 'kr',
       lan: 'la1',
       las: 'la2',
+      me: 'me1',
       na: 'na1',
       oce: 'oc1',
       tr: 'tr1',

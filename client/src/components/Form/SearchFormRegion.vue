@@ -70,6 +70,7 @@ export default {
         'KR',
         'LAN',
         'LAS',
+        'ME',
         'NA',
         'OCE',
         'TR',
